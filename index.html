@@ -277,6 +277,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/11/RHCS双机规划/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="serenityc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SERENITYC'S">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/11/RHCS双机规划/" itemprop="url">
+                  RHCS双机网络及fence规划
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-11 09:47:28 / Modified: 09:47:25" itemprop="dateCreated datePublished" datetime="2018-10-11T09:47:28+08:00">2018-10-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="RHCS双机网络及fence规划"><a href="#RHCS双机网络及fence规划" class="headerlink" title="RHCS双机网络及fence规划"></a>RHCS双机网络及fence规划</h1><hr>
+<h2 id="网络规划"><a href="#网络规划" class="headerlink" title="网络规划"></a>网络规划</h2><ol>
+<li>心跳与业务网络独立<ul>
+<li>心跳采用私网，不能采用直连的方式</li>
+<li>在网络设备上为心跳网段设置一个ping heuristic的IP地址</li>
+</ul>
+</li>
+<li>采用双网卡绑定的工作模式（lacp最佳）</li>
+</ol>
+<hr>
+<h2 id="fence规划"><a href="#fence规划" class="headerlink" title="fence规划"></a>fence规划</h2><ol>
+<li>bmc ip 与业务网络相通</li>
+<li>在两节点心跳互通出现问题时，能有tiebreaker的机制<ul>
+<li>quorum 添加 master_win=1,心跳互通异常时，master存活</li>
+<li>quorum添加ping heuristic，不能ping通指定IP地址的节点会被fence</li>
+</ul>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/10/mind-mapping-for-linux-studing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -650,7 +807,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

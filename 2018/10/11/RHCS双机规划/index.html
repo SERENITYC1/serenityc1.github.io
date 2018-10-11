@@ -108,24 +108,24 @@
 
 
 
-  <meta name="description" content="hexo + github softs node.js git bash   steps install hexo-cli npm install -g hexo-cli   initialize (through git bash) mkdir hexo ; cd hexo hexo init . npm install  npm install hexo-deployer-git –save">
+  <meta name="description" content="RHCS双机网络及fence规划 网络规划 心跳与业务网络独立 心跳采用私网，不能采用直连的方式 在网络设备上为心跳网段设置一个ping heuristic的IP地址   采用双网卡绑定的工作模式（lacp最佳）   fence规划 bmc ip 与业务网络相通 在两节点心跳互通出现问题时，能有tiebreaker的机制 quorum 添加 master_win=1,心跳互通异常时，master存">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+github">
-<meta property="og:url" content="http://yoursite.com/2018/10/10/hexo-github/index.html">
+<meta property="og:title" content="RHCS双机网络及fence规划">
+<meta property="og:url" content="http://yoursite.com/2018/10/11/RHCS双机规划/index.html">
 <meta property="og:site_name" content="SERENITYC&#39;S">
-<meta property="og:description" content="hexo + github softs node.js git bash   steps install hexo-cli npm install -g hexo-cli   initialize (through git bash) mkdir hexo ; cd hexo hexo init . npm install  npm install hexo-deployer-git –save">
+<meta property="og:description" content="RHCS双机网络及fence规划 网络规划 心跳与业务网络独立 心跳采用私网，不能采用直连的方式 在网络设备上为心跳网段设置一个ping heuristic的IP地址   采用双网卡绑定的工作模式（lacp最佳）   fence规划 bmc ip 与业务网络相通 在两节点心跳互通出现问题时，能有tiebreaker的机制 quorum 添加 master_win=1,心跳互通异常时，master存">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-10-11T01:01:11.145Z">
+<meta property="og:updated_time" content="2018-10-11T01:47:25.516Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+github">
-<meta name="twitter:description" content="hexo + github softs node.js git bash   steps install hexo-cli npm install -g hexo-cli   initialize (through git bash) mkdir hexo ; cd hexo hexo init . npm install  npm install hexo-deployer-git –save">
+<meta name="twitter:title" content="RHCS双机网络及fence规划">
+<meta name="twitter:description" content="RHCS双机网络及fence规划 网络规划 心跳与业务网络独立 心跳采用私网，不能采用直连的方式 在网络设备上为心跳网段设置一个ping heuristic的IP地址   采用双网卡绑定的工作模式（lacp最佳）   fence规划 bmc ip 与业务网络相通 在两节点心跳互通出现问题时，能有tiebreaker的机制 quorum 添加 master_win=1,心跳互通异常时，master存">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/10/hexo-github/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/11/RHCS双机规划/"/>
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>hexo+github | SERENITYC'S</title>
+  <title>RHCS双机网络及fence规划 | SERENITYC'S</title>
   
 
 
@@ -280,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/10/hexo-github/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/11/RHCS双机规划/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="serenityc">
@@ -297,7 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo+github
+          <h1 class="post-title" itemprop="name headline">RHCS双机网络及fence规划
               
             
           </h1>
@@ -322,24 +322,12 @@
                 
               
 
-              <time title="Created: 2018-10-10 15:20:28" itemprop="dateCreated datePublished" datetime="2018-10-10T15:20:28+08:00">2018-10-10</time>
+              <time title="Created: 2018-10-11 09:47:28 / Modified: 09:47:25" itemprop="dateCreated datePublished" datetime="2018-10-11T09:47:28+08:00">2018-10-11</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-10-11 09:01:11" itemprop="dateModified" datetime="2018-10-11T09:01:11+08:00">2018-10-11</time>
               
             
           </span>
@@ -372,59 +360,23 @@
       
 
       
-        <h1 id="hexo-github"><a href="#hexo-github" class="headerlink" title="hexo + github"></a>hexo + github</h1><hr>
-<h2 id="softs"><a href="#softs" class="headerlink" title="softs"></a>softs</h2><ul>
-<li>node.js</li>
-<li>git bash</li>
-</ul>
-<hr>
-<h2 id="steps"><a href="#steps" class="headerlink" title="steps"></a>steps</h2><ol>
-<li>install hexo-cli<ul>
-<li>npm install -g hexo-cli</li>
+        <h1 id="RHCS双机网络及fence规划"><a href="#RHCS双机网络及fence规划" class="headerlink" title="RHCS双机网络及fence规划"></a>RHCS双机网络及fence规划</h1><hr>
+<h2 id="网络规划"><a href="#网络规划" class="headerlink" title="网络规划"></a>网络规划</h2><ol>
+<li>心跳与业务网络独立<ul>
+<li>心跳采用私网，不能采用直连的方式</li>
+<li>在网络设备上为心跳网段设置一个ping heuristic的IP地址</li>
 </ul>
 </li>
-<li>initialize (through git bash)<ul>
-<li>mkdir hexo ; cd hexo</li>
-<li>hexo init .</li>
-<li>npm install </li>
-<li>npm install hexo-deployer-git –save</li>
-</ul>
-</li>
-<li>generate ssh-key from local (through git bash)<ul>
-<li>cd ~; ssh-keygen -t rsa -P ‘’</li>
-<li>cat .ssh/id.rsa.pub</li>
-<li>copy the content to github (SSH and GPG keys)</li>
-<li>git config –global git config –global user.email “<a href="mailto:serenityc@live.cn" target="_blank" rel="noopener">serenityc@live.cn</a>“</li>
-<li>test ssh connection (ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>)</li>
-</ul>
-</li>
-<li>add a new repository (github)<ul>
-<li><strong>the repository name</strong> must be <em>serenityc1.github.io</em></li>
-</ul>
-</li>
-<li>modify the GitHub Pages (from github repository settings)</li>
-<li><p>edit hexo _config.yaml </p>
-<ul>
-<li>modify title,author,timezone,etc.</li>
-<li><p>modify new_post_name</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>modify deploy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:SERENITYC1/serenityc1.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>hexo g;hexo d</p>
-</li>
+<li>采用双网卡绑定的工作模式（lacp最佳）</li>
 </ol>
 <hr>
-<h2 id="access-the-website"><a href="#access-the-website" class="headerlink" title="access the website"></a>access the website</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://serenityc1.github.io/</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="push-a-new-article"><a href="#push-a-new-article" class="headerlink" title="push a new article"></a>push a new article</h2><ol>
-<li>hexo new ‘article title’</li>
-<li>edit the hexo/source/_posts/2018-10-10-xxx.md</li>
-<li>hexo g</li>
-<li>hexo d</li>
+<h2 id="fence规划"><a href="#fence规划" class="headerlink" title="fence规划"></a>fence规划</h2><ol>
+<li>bmc ip 与业务网络相通</li>
+<li>在两节点心跳互通出现问题时，能有tiebreaker的机制<ul>
+<li>quorum 添加 master_win=1,心跳互通异常时，master存活</li>
+<li>quorum添加ping heuristic，不能ping通指定IP地址的节点会被fence</li>
+</ul>
+</li>
 </ol>
 
       
@@ -453,15 +405,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/10/mind-mapping-for-linux-studing/" rel="next" title="mind mapping for linux studing">
+                <i class="fa fa-chevron-left"></i> mind mapping for linux studing
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/10/mind-mapping-for-linux-studing/" rel="prev" title="mind mapping for linux studing">
-                mind mapping for linux studing <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -571,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-github"><span class="nav-number">1.</span> <span class="nav-text">hexo + github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#softs"><span class="nav-number">1.1.</span> <span class="nav-text">softs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#steps"><span class="nav-number">1.2.</span> <span class="nav-text">steps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#access-the-website"><span class="nav-number">1.3.</span> <span class="nav-text">access the website</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#push-a-new-article"><span class="nav-number">1.4.</span> <span class="nav-text">push a new article</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RHCS双机网络及fence规划"><span class="nav-number">1.</span> <span class="nav-text">RHCS双机网络及fence规划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络规划"><span class="nav-number">1.1.</span> <span class="nav-text">网络规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fence规划"><span class="nav-number">1.2.</span> <span class="nav-text">fence规划</span></a></li></ol></li></ol></div>
             
 
           </div>
