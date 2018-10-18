@@ -323,12 +323,24 @@
                 
               
 
-              <time title="Created: 2018-10-11 09:47:28 / Modified: 09:47:25" itemprop="dateCreated datePublished" datetime="2018-10-11T09:47:28+08:00">2018-10-11</time>
+              <time title="Created: 2018-10-11 09:47:28" itemprop="dateCreated datePublished" datetime="2018-10-11T09:47:28+08:00">2018-10-11</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-18 08:30:40" itemprop="dateModified" datetime="2018-10-18T08:30:40+08:00">2018-10-18</time>
               
             
           </span>
@@ -362,27 +374,14 @@
 
       
         
-          
-            <h1 id="RHCS双机网络及fence规划"><a href="#RHCS双机网络及fence规划" class="headerlink" title="RHCS双机网络及fence规划"></a>RHCS双机网络及fence规划</h1><hr>
-<h2 id="网络规划"><a href="#网络规划" class="headerlink" title="网络规划"></a>网络规划</h2><ol>
-<li>心跳与业务网络独立<ul>
-<li>心跳采用私网，不能采用直连的方式</li>
-<li>在网络设备上为心跳网段设置一个ping heuristic的IP地址</li>
-</ul>
-</li>
-<li>采用双网卡绑定的工作模式（lacp最佳）</li>
-</ol>
-<hr>
-<h2 id="fence规划"><a href="#fence规划" class="headerlink" title="fence规划"></a>fence规划</h2><ol>
-<li>bmc ip 与业务网络相通</li>
-<li>在两节点心跳互通出现问题时，能有tiebreaker的机制<ul>
-<li>quorum 添加 master_win=1,心跳互通异常时，master存活</li>
-<li>quorum添加ping heuristic，不能ping通指定IP地址的节点会被fence</li>
-</ul>
-</li>
-</ol>
-
-          
+          <h1 id="RHCS双机网络及fence规划"><a href="#RHCS双机网络及fence规划" class="headerlink" title="RHCS双机网络及fence规划"></a>RHCS双机网络及fence规划</h1>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/11/RHCS双机规划/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -480,12 +479,24 @@
                 
               
 
-              <time title="Created: 2018-10-10 15:22:48 / Modified: 15:23:19" itemprop="dateCreated datePublished" datetime="2018-10-10T15:22:48+08:00">2018-10-10</time>
+              <time title="Created: 2018-10-10 15:22:48" itemprop="dateCreated datePublished" datetime="2018-10-10T15:22:48+08:00">2018-10-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-18 08:30:27" itemprop="dateModified" datetime="2018-10-18T08:30:27+08:00">2018-10-18</time>
               
             
           </span>
@@ -520,7 +531,8 @@
       
         
           
-            <p><img src="http://imglf5.nosdn0.126.net/img/L2x2Nkh3eGh4ZitFbEhqeXhGOVB3cXFpd252SXVBNVNxNSthMWx1dDlUcVpVRm5xLzVYbmtBPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0" alt="linux学习导图"></p>
+            <a id="more"></a>
+<p><img src="http://imglf5.nosdn0.126.net/img/L2x2Nkh3eGh4ZitFbEhqeXhGOVB3cXFpd252SXVBNVNxNSthMWx1dDlUcVpVRm5xLzVYbmtBPT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0" alt="linux学习导图"></p>
 
           
         
@@ -637,7 +649,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-11 10:15:31" itemprop="dateModified" datetime="2018-10-11T10:15:31+08:00">2018-10-11</time>
+                <time title="Modified: 2018-10-18 08:30:11" itemprop="dateModified" datetime="2018-10-18T08:30:11+08:00">2018-10-18</time>
               
             
           </span>
@@ -671,77 +683,19 @@
 
       
         
-          
-            <h1 id="hexo-github"><a href="#hexo-github" class="headerlink" title="hexo + github"></a>hexo + github</h1><hr>
+          <h1 id="hexo-github"><a href="#hexo-github" class="headerlink" title="hexo + github"></a>hexo + github</h1><hr>
 <h2 id="softs"><a href="#softs" class="headerlink" title="softs"></a>softs</h2><ul>
 <li>node.js</li>
 <li>git bash</li>
 </ul>
 <hr>
-<h2 id="steps"><a href="#steps" class="headerlink" title="steps"></a>steps</h2><ol>
-<li>install hexo-cli<ul>
-<li>npm install -g hexo-cli</li>
-</ul>
-</li>
-<li>initialize (through git bash)<ul>
-<li>mkdir hexo ; cd hexo</li>
-<li>hexo init .</li>
-<li>npm install </li>
-<li>npm install hexo-deployer-git –save</li>
-</ul>
-</li>
-<li>generate ssh-key from local (through git bash)<ul>
-<li>cd ~; ssh-keygen -t rsa -P ‘’</li>
-<li>cat .ssh/id.rsa.pub</li>
-<li>copy the content to github (SSH and GPG keys)</li>
-<li>git config –global git config –global user.email “<a href="mailto:serenityc@live.cn" target="_blank" rel="noopener">serenityc@live.cn</a>“</li>
-<li>test ssh connection (ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>)</li>
-</ul>
-</li>
-<li>add a new repository (github)<ul>
-<li><strong>the repository name</strong> must be <em>serenityc1.github.io</em></li>
-</ul>
-</li>
-<li>modify the GitHub Pages (from github repository settings)</li>
-<li><p>edit hexo _config.yaml </p>
-<ul>
-<li>modify title,author,timezone,etc.</li>
-<li><p>modify new_post_name</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>modify deploy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:SERENITYC1/serenityc1.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>hexo g;hexo d</p>
-</li>
-</ol>
-<hr>
-<h2 id="access-the-website"><a href="#access-the-website" class="headerlink" title="access the website"></a>access the website</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://serenityc1.github.io/</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="push-a-new-article"><a href="#push-a-new-article" class="headerlink" title="push a new article"></a>push a new article</h2><ol>
-<li>method 1<ul>
-<li>hexo new ‘article title’</li>
-<li>edit the hexo/source/_posts/2018-10-10-xxx.md</li>
-<li>hexo g</li>
-<li>hexo d</li>
-</ul>
-</li>
-<li><p>method 2</p>
-<ul>
-<li>cp your new xxx.d to  hexo/source/_posts/2018-10-11-xxx.md</li>
-<li><p>on the top,add</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: xxx</span><br><span class="line">date: 2018-10-11 10:11:28</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>hexo g</p>
-</li>
-<li>hexo d</li>
-</ul>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/10/hexo-github/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
